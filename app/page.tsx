@@ -51,7 +51,7 @@ export default function Home() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-black text-lg px-8 py-4 h-auto"
             >
-              <Link href="/contact">Réservervation ou Devis</Link>
+              <Link href="/contact">Réservation ou Devis</Link>
             </Button>
           </div>
         </div>
