@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Menu, X, Phone, Car } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone, Car } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   const navigation = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Tarifs', href: '/tarifs' },
-    { name: 'À Propos', href: '/a-propos' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Accueil", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Tarifs", href: "/tarifs" },
+    { name: "À Propos", href: "/a-propos" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -37,7 +37,9 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`text-gray-700 hover:text-blue-600 font-medium transition-colors ${
-                  pathname === item.href ? 'text-blue-600 border-b-2 border-blue-600' : ''
+                  pathname === item.href
+                    ? "text-blue-600 border-b-2 border-blue-600"
+                    : ""
                 }`}
               >
                 {item.name}
@@ -48,18 +50,15 @@ export default function Header() {
           {/* CTA Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             <Button asChild variant="outline">
-              <a href="tel:+33123456789">
+              <a href="tel:+33666491219">
                 <Phone className="h-4 w-4 mr-2" />
-                01 23 45 67 89
+                06 66 49 12 19
               </a>
             </Button>
           </div>
 
           {/* Menu Mobile */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <X className="h-6 w-6 text-gray-700" />
             ) : (
@@ -77,7 +76,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={`text-gray-700 hover:text-blue-600 font-medium py-2 ${
-                    pathname === item.href ? 'text-blue-600' : ''
+                    pathname === item.href ? "text-blue-600" : ""
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -86,7 +85,7 @@ export default function Header() {
               ))}
               <div className="pt-4 border-t">
                 <Button asChild className="w-full">
-                  <a href="tel:+33123456789">
+                  <a href="tel:+33666491219">
                     <Phone className="h-4 w-4 mr-2" />
                     Appelez Maintenant
                   </a>

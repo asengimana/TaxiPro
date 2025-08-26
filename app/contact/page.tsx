@@ -202,10 +202,10 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Téléphone</h3>
                       <a
-                        href="tel:+33123456789"
+                        href="tel:+33666491219"
                         className="text-blue-600 hover:text-blue-800 text-xl font-semibold"
                       >
-                        01 23 45 67 89
+                        06 66 49 12 19
                       </a>
                       <p className="text-sm text-gray-600">Disponible 24h/7j</p>
                     </div>
@@ -220,10 +220,10 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Email</h3>
                       <a
-                        href="mailto:contact@taxipro.fr"
+                        href="mailto:alainsengimana@gmail.com"
                         className="text-green-600 hover:text-green-800 text-lg"
                       >
-                        contact@taxipro.fr
+                        alainsengimana@gmail.com
                       </a>
                       <p className="text-sm text-gray-600">Réponse sous 2h</p>
                     </div>
@@ -272,7 +272,7 @@ export default function Contact() {
                   pouvons généralement être chez vous en moins de 20 minutes.
                 </p>
                 <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <a href="tel:+33123456789">
+                  <a href="tel:+33666491219">
                     <Phone className="mr-2 h-4 w-4" />
                     {"Appel d'Urgence"}
                   </a>
@@ -315,7 +315,7 @@ export default function Contact() {
                           value={formData.telephone}
                           onChange={handleChange}
                           required
-                          placeholder="06 12 34 56 78"
+                          placeholder="06 66 49 12 19"
                         />
                       </div>
                     </div>
