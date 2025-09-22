@@ -41,7 +41,7 @@ export default function Home() {
               size="lg"
               className="bg-amber-500 hover:bg-amber-600 text-black font-semibold text-lg px-8 py-4 h-auto"
             >
-              <a href="tel:+33123456789">
+              <a href="tel:+33666491219">
                 <Phone className="mr-2 h-5 w-5" />
                 Appeler Maintenant
               </a>
